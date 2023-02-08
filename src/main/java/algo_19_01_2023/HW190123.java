@@ -1,13 +1,23 @@
 package algo_19_01_2023;
 
+import java.util.Arrays;
 import java.util.Stack;
+
 
 public class HW190123 {
 //    First level: 1. Реализовать метод search() у написанного на занятии стека MyStack (см. код в репозитории).
 //    public int search(int element) -  определяет, существует ли объект в стеке.
 //    Если элемент найден, возвращает позицию элемента с вершины стека. В противном случае он возвращает -1.
 
-        private int[] array;
+
+    @Override
+    public String toString() {
+        return "HW190123{" +
+                "array=" + Arrays.toString(array) +
+                '}';
+    }
+
+    private int[] array;
         private int count;
         public HW190123(int size) {
             array = new int[size];
@@ -36,8 +46,25 @@ public class HW190123 {
             myStack.push(4);
             myStack.push(5);
 
+            System.out.println(myStack);
             System.out.println(myStack.search(3));
             System.out.println(myStack.search(6));
+
+            Queue myQueue = new Queue(4);
+            int[] arr = {1,2,3,4};
+
+//            int 1= myQueue.head;
+//
+//
+//
+//
+//            myQueue.enQueue(2);
+//            myQueue.enQueue(1);
+//            myQueue.display();
+//            myQueue.deQueue();
+//            myQueue.peak();
+
+
 
        }
 
@@ -49,7 +76,7 @@ public class HW190123 {
 //    size()
 //    начало:
 
-    public class Queue {
+    public static class Queue {
     private int[] arr;      // массив для хранения элементов queue
     private int head;      // head указывает на передний элемент в queue
     private int tail;       // tail часть указывает на последний элемент в queue
@@ -66,9 +93,5 @@ public class HW190123 {
         count = 0;
     }
 
-
-
-    // ?? ….. дальше самостоятельно
-
-}
+    }
 }
