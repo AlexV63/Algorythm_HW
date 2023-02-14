@@ -13,54 +13,86 @@ package HW_26_01_2023;
  * Сделать список двусвязным (все методы должны работать корректно)
  */
 
-import java.util.ArrayList;
-
 public class Solution {
     public static void main(String[] args) {
 
-        //       ArrayList<Integer> list = new ArrayList<>();
-        ListEx.list.add(2);
-        ListEx.list.add(10);
-        ListEx.list.add(8);
-        ListEx.list.add(3);
-        ListEx.list.add(15);
-        ListEx.list.add(9);
+        LinkedList linkedList = new LinkedList();
 
-        System.out.println(ListEx.list);
+        linkedList.add("abc");
+        linkedList.add("def");
+        linkedList.add("ghi");
+        linkedList.add("klm");
 
-        ListEx.pushToIndex(3, 5);
-        System.out.println(ListEx.list);
-
-        ListEx.removeByIndex(5);
-        System.out.println(ListEx.list);
-
-        System.out.println(ListEx.size());
-
-
-    }
-
-    public class ListEx {
-        private static ArrayList<Integer> list = new ArrayList<>();
-
-        public static boolean pushToIndex(int index, int data) {
-            if (index >= 0 && index <= list.size()) {
-                list.add(index, data);
-                return true;
-            }
-            return false;
-        }
-
-        public static int removeByIndex(int index) {
-            if (index >= 0 && index < list.size()) {
-                return list.remove(index);
-            }
-            return -1;
-        }
-
-        public static int size() {
-             return list.size();
-            }
-
+        linkedList.print();
 
     }
 }
+
+//        ListEx.list.add(10);
+//        ListEx.list.add(8);
+//        ListEx.list.add(3);
+//        ListEx.list.add(15);
+//        ListEx.list.add(9);
+//
+//        System.out.println(ListEx.list);
+//
+//        ListEx.pushToIndex(3, 5);
+//        System.out.println(ListEx.list);
+//
+//        ListEx.removeByIndex(5);
+//        System.out.println(ListEx.list);
+//
+//        System.out.println(ListEx.sizeList());
+//
+
+//        DoublyLinkedList doublyLinkedList =  new ArrayList<>();
+
+
+
+//    public class ListEx {
+//        private static LinkedList list = new LinkedList();
+
+//        public static boolean pushToIndex(int index, int data) {
+////            if (index >= 0 && index <= list.size()) {
+////                list.add(index, data);
+////                return true;
+////            }
+////            return false;
+////        }
+////
+////        public static int removeByIndex(int index) {
+////            if (index >= 0 && index < list.size()) {
+////                return list.remove(index);
+////            }
+////            return -1;
+////        }
+////
+////        public static int sizeList() {
+////            return list.size();
+////        }
+////    }
+////}
+
+//    public class DoublyLinkedList<T> extends ArrayList<T> {
+//        private Node head;
+//        private Node tail;
+//
+//
+//        public  void reverse() {
+//            Node current = head;
+//            Node temp = null;
+//
+//            while (current != null) {
+//                temp = current.prev;
+//                current.prev = current.next;
+//                current.next = temp;
+//                current = current.prev;
+//            }
+//
+//            temp = head;
+//            head = tail;
+//            tail = temp;
+//        }
+//    }
+//}
+

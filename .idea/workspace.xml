@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8ce4db5-9fb0-409e-9504-1fa5e72ca74f" name="Changes" comment="HW 0202 for transfer">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HW_26_01_2023/Solution.java" afterDir="false" />
+    <list default="true" id="b8ce4db5-9fb0-409e-9504-1fa5e72ca74f" name="Changes" comment="HW Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HW_26_01_2023/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HW_26_01_2023/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HW_26_01_2023/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HW_26_01_2023/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/algo_19_01_2023/HW190123.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algo_19_01_2023/HW190123.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675892066272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW 26012023 for transfer">
+      <created>1676394755313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676394755313</updated>
+    </task>
+    <task id="LOCAL-00006" summary="HW 26012023 for transfer">
+      <created>1676394791517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676394791517</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +197,7 @@
     <MESSAGE value="add old HWs" />
     <MESSAGE value="HW 1201 for transfer" />
     <MESSAGE value="HW 0202 for transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW 0202 for transfer" />
+    <MESSAGE value="HW 26012023 for transfer" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW 26012023 for transfer" />
   </component>
 </project>
