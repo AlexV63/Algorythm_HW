@@ -13,54 +13,31 @@ package HW_26_01_2023;
  * Сделать список двусвязным (все методы должны работать корректно)
  */
 
-import java.util.ArrayList;
-
 public class Solution {
     public static void main(String[] args) {
 
-        //       ArrayList<Integer> list = new ArrayList<>();
-        ListEx.list.add(2);
-        ListEx.list.add(10);
-        ListEx.list.add(8);
-        ListEx.list.add(3);
-        ListEx.list.add(15);
-        ListEx.list.add(9);
-
-        System.out.println(ListEx.list);
-
-        ListEx.pushToIndex(3, 5);
-        System.out.println(ListEx.list);
-
-        ListEx.removeByIndex(5);
-        System.out.println(ListEx.list);
-
-        System.out.println(ListEx.size());
+        LinkedList linkedList = new LinkedList();
 
 
-    }
+        linkedList.add(5);
+        linkedList.add(15);
+        linkedList.add(25);
+        linkedList.add(35);
+        linkedList.add(45);
+        linkedList.add(55);
 
-    public class ListEx {
-        private static ArrayList<Integer> list = new ArrayList<>();
+        linkedList.print();
+        System.out.println();
 
-        public static boolean pushToIndex(int index, int data) {
-            if (index >= 0 && index <= list.size()) {
-                list.add(index, data);
-                return true;
-            }
-            return false;
-        }
-
-        public static int removeByIndex(int index) {
-            if (index >= 0 && index < list.size()) {
-                return list.remove(index);
-            }
-            return -1;
-        }
-
-        public static int size() {
-             return list.size();
-            }
-
+        linkedList.remove(35);
+        System.out.println("After remove");
+        linkedList.print();
 
     }
 }
+
+
+//        linkedList.add("abc");
+//        linkedList.add("def");
+//        linkedList.add("ghi");
+//        linkedList.add("klm");
